@@ -11,7 +11,7 @@ const Billing = () => {
       </div>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
-          Custom <br className='sm:block hidden'/> Design & Development.
+          Custom <br className='sm:block hidden'/> Design & Developments.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Aurex Solutions delivers tailored design and development services to bring your vision to life. 

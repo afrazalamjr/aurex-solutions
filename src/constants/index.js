@@ -22,11 +22,11 @@ export const navLinks = [
   },
   {
     id: "features",
-    title: "Features",
+    title: "About Us",
   },
   {
     id: "product",
-    title: "Product",
+    title: "Services",
   },
   {
     id: "clients",
@@ -37,70 +37,72 @@ export const navLinks = [
 export const features = [
   {
     id: "feature-1",
-    icon: star,
-    title: "Rewards",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+    icon: star, // Consider replacing with design/development icon
+    title: "UI/UX Design",
+    content: "Pixel-perfect interfaces with user-centered design principles that increase engagement by 40% on average.",
   },
   {
     id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
+    icon: shield, // Consider replacing with security/shield icon
+    title: "Secure Development",
+    content: "Enterprise-grade security built into every layer of your application from day one.",
   },
   {
     id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
-  },
+    icon: send, // Consider replacing with rocket/lightning icon
+    title: "Rapid Deployment",
+    content: "From concept to production in weeks, not months, with our agile development process.",
+  }
+
 ];
 
 export const feedback = [
-  {
+ {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+      "Aurex Solutions built our e-commerce platform with such precision that our conversion rates increased by 140%. Their React developers are among the best we've worked with.",
+    name: "Ahmed Raza",
+    title: "CEO, ShopKar (Pakistan)",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+      "The mobile app Aurex developed for our SaaS product received a 4.9/5 rating on the App Store within 3 months of launch. Their UI/UX team is exceptional.",
+    name: "Sarah Johnson",
+    title: "Product Director, TechNova (USA)",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+      "We've partnered with Aurex on 6 projects over 3 years because they consistently deliver ahead of schedule. Their Node.js architects saved us $250K in cloud costs.",
+    name: "Fatima Khan",
+    title: "CTO, DigiSolutions (Pakistan)",
     img: people03,
-  },
+  }
+  
 ];
 
 export const stats = [
-  {
+   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Projects Completed",
+    value: "150+",
+    // Shows experience and scale
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Client Satisfaction Rate",
+    value: "98%",
+    // Highlights quality of service
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
-  },
+    title: "Development Hours Logged",
+    value: "50,000+",
+    // Demonstrates technical capacity
+  }
 ];
 
 export const footerLinks = [
