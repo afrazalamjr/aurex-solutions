@@ -4,8 +4,8 @@ import styles, { layout } from '../style';
 import Button from './Button';
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px] transition-all hover:scale-[1.02] ${index !== features.length - 1 ? 'mb-6' : 'mb-0'} bg-black-gradient-2 feature-card`}>
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-aurex-blue-gradient`}>
+  <div className={`flex flex-row p-6 rounded-[20px] transition-all hover:scale-[1.02] ${index !== features.length - 1 ? 'mb-6' : 'mb-0'} bg-[#1f1f1f] feature-card`}>
+    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-[#158ec7]`}>
       <img
         src={icon}
         alt={title}
@@ -16,7 +16,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
       <h4 className='font-poppins font-semibold text-white text-[20px] leading-[26px] mb-2'>
         {title}
       </h4>
-      <p className={`${styles.paragraph} max-w-[90%]`}>
+      <p className={`${styles.paragraph} max-w-[90%] text-white`}>
         {content}
       </p>
     </div>
@@ -25,17 +25,18 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Business = () => {
   return (
-    <section id='features' className={`${layout.section} relative`}>
-      {/* Background elements */}
-      <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-      <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+    <section id='features' className={`${layout.section} relative bg-transparent`}>
       
+      {/* Removed all background gradient elements */}
+
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>
-          Your Vision, <br className='sm:block hidden'/> 
-          <span className='text-gradient'>Our Implementation</span>
+        <h2 className={`${styles.heading2} text-white`}>
+          Your Vision, <br className='sm:block hidden' />
+          <span className="bg-gradient-to-r from-white to-[#158ec7] bg-clip-text text-transparent">
+            Our Implementation
+          </span>
         </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5 text-white`}>
           Aurex combines technical excellence with creative problem-solving to deliver 
           software solutions that drive real business impact.
         </p>

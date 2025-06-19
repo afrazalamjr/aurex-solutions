@@ -4,7 +4,7 @@ const Button = ({ styles }) => {
   return (
     <button 
       type='button' 
-      className={`py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] text-white outline-none ${styles} rounded-[10px] hover:opacity-80 transition-all`}
+      className={`py-4 px-6 bg-[#158ec7] font-poppins font-medium text-[18px] text-black outline-none ${styles} rounded-[10px] hover:opacity-80 transition-all`}
     >
       Get Started
     </button>

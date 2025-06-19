@@ -37,24 +37,24 @@ export const navLinks = [
 export const features = [
   {
     id: "feature-1",
-    icon: star, // Consider replacing with design/development icon
-    title: "UI/UX Design",
-    content: "Pixel-perfect interfaces with user-centered design principles that increase engagement by 40% on average.",
+    icon: star, // You can replace with a relevant icon (like a social media icon)
+    title: "Social Media Designs",
+    content: "Creative and impactful designs tailored for your brand to elevate your online presence across platforms.",
   },
   {
     id: "feature-2",
-    icon: shield, // Consider replacing with security/shield icon
-    title: "Secure Development",
-    content: "Enterprise-grade security built into every layer of your application from day one.",
+    icon: shield, // Consider replacing with a web icon or similar
+    title: "Full Stack Web Development",
+    content: "Modern, scalable websites and applications crafted with the latest technologies to meet your business goals.",
   },
   {
     id: "feature-3",
-    icon: send, // Consider replacing with rocket/lightning icon
-    title: "Rapid Deployment",
-    content: "From concept to production in weeks, not months, with our agile development process.",
+    icon: send, // Consider replacing with automation/gear icon
+    title: "Automations",
+    content: "Custom-built automations to streamline business workflows, saving time and boosting productivity.",
   }
-
 ];
+
 
 export const feedback = [
  {

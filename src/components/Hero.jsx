@@ -1,49 +1,50 @@
 import styles from '../style'
-import { discount, robot } from '../assets'
+import { robot } from '../assets'
 import GetStarted from './GetStarted'
 
 const Hero = () => {
   return (
-    <section id='home' className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-        <div className='flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2'>
-          <img
-            src={discount}
-            alt='discount'
-            className='w-[32px] h-[32px]'
-          />
-          <p className={`${styles.paragraph} ml-2`}>
-            <span className='text-white'>Celebrating 100 Clients:</span> 20% OFF All Services {" "}
-            <span className='text-white'>Limited Time</span>
-          </p>
-        </div>
+    <section id='home' className={`flex md:flex-row flex-col ${styles.paddingY} relative`}>
+      
+      {/* Left Side */}
+      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6 relative z-[2] md:-mt-12 -mt-8`}>
+        
         <div className='flex flex-row justify-between items-center w-full'>
-          <h1 className='flex-1 font-poppins font-semibold ss:text-[64px] text-[42px] text-white ss:leading-[90px] leading-[65px]'>
-            Innovate With<br className='sm:block hidden'/> {" "}
-            <span className='text-gradient'>Aurex</span> {" "}
+          <h1 className='flex-1 font-poppins font-semibold ss:text-[64px] text-[42px] text-white ss:leading-[80px] leading-[60px]'>
+            Innovate With <br className='sm:block hidden' />
+            <span className="bg-gradient-to-r from-white to-[#158ec7] bg-clip-text text-transparent">Aurex</span>{" "}
           </h1>
+
           <div className='ss:flex hidden md:mr-4 mr-0'>
-            <GetStarted className="scale-90"/> {/* Reduced arrow size */}
+            <GetStarted className="scale-90" />
           </div>
         </div>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5 text-[15px] leading-[26px]`}>
+
+        <p className={`${styles.paragraph} max-w-[470px] mt-3 text-[15px] leading-[24px] text-white`}>
           Aurex Solutions delivers cutting-edge digital experiences. 
           We combine sleek design with robust development to bring your vision to life.
         </p>
       </div>
+
+      {/* Right Side (Hero Image + Background) */}
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
         <img
           src={robot}
           alt='design-development'
           className='w-[100%] h-[100%] relative z-[5]'
         />
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient"/>
+
+        {/* Gradients */}
+        <div className="absolute z-[0] w-[40%] h-[35%] top-0 bg-gradient-to-r from-white to-[#158ec7] opacity-20 rounded-full" />
+        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bg-gradient-to-tr from-white to-transparent bottom-40 opacity-10" />
+        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 bg-gradient-to-r from-white to-[#158ec7] opacity-20 rounded-full" />
       </div>
+
+      {/* Button for Mobile */}
       <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted className="scale-85"/> {/* Smaller for mobile */}
+        <GetStarted className="scale-85" />
       </div>
+
     </section>
   )
 }
