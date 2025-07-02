@@ -1,6 +1,5 @@
 import styles from '../style'
 import { robot } from '../assets'
-import GetStarted from './GetStarted'
 
 const Hero = () => {
   return (
@@ -14,10 +13,7 @@ const Hero = () => {
             Innovate With <br className='sm:block hidden' />
             <span className="bg-gradient-to-r from-white to-[#158ec7] bg-clip-text text-transparent">Aurex</span>{" "}
           </h1>
-
-          <div className='ss:flex hidden md:mr-4 mr-0'>
-            <GetStarted className="scale-90" />
-          </div>
+          {/* GetStarted button removed */}
         </div>
 
         <p className={`${styles.paragraph} max-w-[470px] mt-3 text-[15px] leading-[24px] text-white`}>
@@ -39,12 +35,6 @@ const Hero = () => {
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bg-gradient-to-tr from-white to-transparent bottom-40 opacity-10" />
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 bg-gradient-to-r from-white to-[#158ec7] opacity-20 rounded-full" />
       </div>
-
-      {/* Button for Mobile */}
-      <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted className="scale-85" />
-      </div>
-
     </section>
   )
 }

@@ -13,9 +13,21 @@ import {
 } from './components'
 import styles from './style'
 
+// Import the background image
+import bgImg from './assets/bg.png'
+
 const App = () => {
   return (
-    <div className='bg-primary w-full overflow-hidden'>
+    <div
+      className='bg-primary w-full overflow-hidden'
+      style={{
+        backgroundImage: `url(${bgImg})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        minHeight: '100vh'
+      }}
+    >
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar/>
