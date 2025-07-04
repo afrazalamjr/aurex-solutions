@@ -69,8 +69,8 @@ export const feedback = [
     id: "feedback-2",
     content:
       "The mobile app Aurex developed for our SaaS product received a 4.9/5 rating on the App Store within 3 months of launch. Their UI/UX team is exceptional.",
-    name: "Sarah Johnson",
-    title: "Product Director, TechNova (USA)",
+    name: "Sarah",
+    title: "Startup Founder, TechWave (USA)",
     img: people02,
   },
   {
@@ -175,12 +175,12 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/aurexsol/",
   },
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/profile.php?id=61567608718359",
   },
   {
     id: "social-media-3",
@@ -190,7 +190,7 @@ export const socialMedia = [
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/aurex-solutions",
   },
 ];
 
