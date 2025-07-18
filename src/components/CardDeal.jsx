@@ -9,12 +9,11 @@ const CardDeal = () => {
     <section className={layout.section}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
-          Seamless Workflows, <br className='sm:block hidden'/> Powered by Aurex.
+          Ready to Transform Your Enterprise? <br className='sm:block hidden'/> 
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Our design and development processes are optimized for efficiency, 
-          ensuring your project is delivered on time and exceeds expectations.
-        </p>
+
+Get in touch with our team to discuss your specific needs and discover how our innovative solutions can drive your business forward.        </p>
         <Button styles='mt-10' />
       </div>
       <div className={layout.sectionImg}>

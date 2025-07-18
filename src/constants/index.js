@@ -5,12 +5,12 @@ import {
   facebook, 
   instagram, 
   linkedin, 
-  twitter, 
-  airbnb, 
-  binance, 
-  coinbase, 
-  dropbox, 
-  send, 
+  client1,client2,
+  client3,client4,
+  client5,client6,client7,
+  twitter,  
+
+  send,
   shield, 
   star
 } from "../assets";
@@ -197,18 +197,37 @@ export const socialMedia = [
 export const clients = [
   {
     id: "client-1",
-    logo: airbnb,
+    logo: client1,
+    link: 'https://www.nebrascorp.com/',
   },
   {
     id: "client-2",
-    logo: binance,
+    logo: client2,
+    link: 'https://www.teambridgeit.org/',
   },
   {
     id: "client-3",
-    logo: coinbase,
+    logo: client3,
+    link: 'https://www.fohmics.ae/',
   },
   {
     id: "client-4",
-    logo: dropbox,
+    logo: client4,
+    link: 'https://www.pivot.ae/Home',
   },
+  {
+    id: "client-5",
+    logo: client5,
+    link: 'https://smherbscosmetics.com/',
+  },
+  {
+    id: "client-6",
+    logo: client6,
+    link: 'https://www.learnoda.com/',
+  },
+  {
+    id: "client-7",
+    logo: client7,
+    link: 'https://letera.ai',
+  }
 ];

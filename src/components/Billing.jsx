@@ -38,31 +38,42 @@ const Billing = () => {
   return (
     <section id='product' className={`${layout.sectionReverse} relative`}>
 
-      {/* ✅ Left Side → Timeline with custom gradient line */}
-<div className="flex flex-col items-center justify-center w-1/2 relative">
-  {/* Gradient vertical line - closer to the items */}
-  <div className="absolute left-[10px] top-6 bottom-6 w-[2px] bg-gradient-to-b from-white to-[#158ec7] z-0" />
-
-  {/* Dots and labels */}
-  <div className="relative flex flex-col gap-10 pl-5 mt-6 z-10">
-    {services.map((service, index) => (
-      <div
-        key={index}
-        className="flex items-center gap-4 group transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer"
-        onClick={() => setSelectedService(service)}
-      >
-        {/* Gradient dot */}
-        <div className="w-4 h-4 bg-gradient-to-r from-white to-[#158ec7] rounded-full -ml-[13px] border-4 border-black transition-all duration-300 group-hover:scale-125" />
-        <span className="text-white font-semibold text-lg group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-[#158ec7] group-hover:bg-clip-text group-hover:text-transparent transition-all">
-          {service.title}
-        </span>
+      {/* ✅ Left Side → Timeline Items Only */}
+      <div className="flex flex-col items-start justify-center w-1/2 relative px-6">
+        <div className="relative flex flex-col gap-10 mt-6 z-10">
+          {services.map((service, index) => {
+            const isSelected = selectedService?.title === service.title;
+            return (
+              <div
+                key={index}
+                className="flex items-center gap-4 group cursor-pointer"
+                onClick={() => setSelectedService(service)}
+              >
+                {/* Dot */}
+                <div
+                  className={`w-5 h-5 rounded-full border-4 transition-all duration-300 
+                    ${isSelected
+                      ? 'bg-[#158ec7] border-white scale-125'
+                      : 'bg-gradient-to-r from-white to-[#158ec7] border-black'
+                    }`}
+                />
+                {/* Title */}
+                <span
+                  className={`text-lg sm:text-xl transition-all font-semibold 
+                    ${isSelected
+                      ? 'text-[#158ec7]'
+                      : 'text-white group-hover:text-[#158ec7]'
+                    }`}
+                >
+                  {service.title}
+                </span>
+              </div>
+            );
+          })}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
 
-
-      {/* ✅ Right Side → Dynamic Text */}
+      {/* ✅ Right Side → Text Content */}
       <div className={`${layout.sectionInfo}`}>
         <h2 className={styles.heading2}>
           {selectedService ? selectedService.title : 'Your Full-Service'} <br className='sm:block hidden' />
