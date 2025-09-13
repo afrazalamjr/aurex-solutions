@@ -19,18 +19,50 @@ export const navLinks = [
   {
     id: "home",
     title: "Home",
+    path: "/",
   },
   {
-    id: "features",
+    id: "about",
     title: "About Us",
+    path: "/about",
   },
   {
-    id: "product",
+    id: "services",
     title: "Services",
+    path: "/services",
+    hasDropdown: true,
+    dropdownItems: [
+      {
+        id: "business-development",
+        title: "Business Development",
+        path: "/services/business-development",
+      },
+      {
+        id: "ai-workflow-automation",
+        title: "AI Workflow Automation",
+        path: "/services/ai-workflow-automation",
+      },
+      {
+        id: "crypto-coin-launch",
+        title: "Crypto Enhanced Coin Launch",
+        path: "/services/crypto-coin-launch",
+      },
+      {
+        id: "blockchain",
+        title: "Blockchain",
+        path: "/services/blockchain",
+      },
+    ],
   },
   {
     id: "clients",
     title: "Clients",
+    path: "/clients",
+  },
+  {
+    id: "contact",
+    title: "Contact Us",
+    path: "/contact",
   },
 ];
 
