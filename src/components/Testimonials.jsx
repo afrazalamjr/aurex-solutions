@@ -5,17 +5,20 @@ import Feedback from './Feedback'
 
 const Testimonials = () => {
   return (
-    <section id='clients' className={`${styles.paddingY} ${styles.flexce} flex-col relative`}>
-      <div className='absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40'/>
-      <div className='w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]'>
-        <h2 className={styles.heading2}>What people are <br className='sm:block hidden'/>saying about us</h2>
-        <div className='w-full md:mt-0 mt-6'>
-          <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-            Everything you need to accept card payments and grow your business anywhere on the planet.
-          </p>  
+    <section id='testimonials' className={`${styles.paddingY} flex-col relative`}>
+      {/* Profile pictures cluster */}
+      <div className='flex justify-center mb-12'>
+        <div className='flex -space-x-2'>
+          {feedback.slice(0, 5).map((_, index) => (
+            <div key={index} className='w-12 h-12 rounded-full bg-gradient-to-br from-dolyBlue/20 to-dolyBlue/5 border-2 border-dolyBlue/30 flex items-center justify-center'>
+              <div className='w-8 h-8 rounded-full bg-dolyBlue/40'></div>
+            </div>
+          ))}
         </div>
       </div>
-      <div className='flex flex-wrap sm:justify-start justify-center w-full feedback-contrainer relative z-[1]'>
+
+      {/* Testimonials grid */}
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6'>
         {feedback.map((card) => (
           <Feedback key={card.id} {...card}/>        
         ))}

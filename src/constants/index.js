@@ -43,14 +43,14 @@ export const navLinks = [
         path: "/services/ai-workflow-automation",
       },
       {
-        id: "crypto-coin-launch",
-        title: "Crypto Enhanced Coin Launch",
-        path: "/services/crypto-coin-launch",
+        id: "blockchain-development",
+        title: "Blockchain Development",
+        path: "/services/blockchain",
       },
       {
-        id: "blockchain",
-        title: "Blockchain",
-        path: "/services/blockchain",
+        id: "crypto-launch-pad",
+        title: "Crypto Launch Pad",
+        path: "/services/crypto-coin-launch",
       },
     ],
   },
@@ -112,6 +112,22 @@ export const feedback = [
     name: "Fatima Khan",
     title: "CTO, DigiSolutions (Pakistan)",
     img: people03,
+  },
+  {
+    id: "feedback-4",
+    content:
+      "Aurex's blockchain development expertise helped us launch our DeFi platform successfully. Their smart contract auditing saved us from potential vulnerabilities.",
+    name: "Michael Chen",
+    title: "Founder, CryptoFinance (Singapore)",
+    img: people01,
+  },
+  {
+    id: "feedback-5",
+    content:
+      "The AI automation solutions Aurex implemented reduced our operational costs by 60% while improving efficiency. Highly recommended for any business looking to scale.",
+    name: "Emma Thompson",
+    title: "Operations Director, TechCorp (UK)",
+    img: people02,
   }
   
 ];
@@ -139,65 +155,82 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Contact",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "info@aurexsolutions.com",
+        link: "mailto:info@aurexsolutions.com",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "+92 300 123 4567",
+        link: "tel:+923001234567",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Karachi, Pakistan",
+        link: "#",
       },
     ],
   },
   {
-    title: "Community",
+    title: "Company",
     links: [
       {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        name: "Our Story",
+        link: "/about",
       },
       {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        name: "Team",
+        link: "/team",
       },
       {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        name: "Careers",
+        link: "/careers",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        link: "/blog",
       },
     ],
   },
   {
-    title: "Partner",
+    title: "Support",
     links: [
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: "Help Center",
+        link: "/help",
       },
       {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "FAQs",
+        link: "/faq",
+      },
+      {
+        name: "Privacy Policy",
+        link: "/privacy",
+      },
+      {
+        name: "Terms of Service",
+        link: "/terms",
+      },
+    ],
+  },
+  {
+    title: "Follow Us",
+    links: [
+      {
+        name: "Facebook",
+        link: "https://www.facebook.com/profile.php?id=61567608718359",
+      },
+      {
+        name: "Twitter",
+        link: "https://www.twitter.com/",
+      },
+      {
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/company/aurex-solutions",
+      },
+      {
+        name: "Instagram",
+        link: "https://www.instagram.com/aurexsol/",
       },
     ],
   },
@@ -261,5 +294,33 @@ export const clients = [
     id: "client-7",
     logo: client7,
     link: 'https://letera.ai',
+  }
+];
+
+export const partners = [
+  {
+    id: "partner-1",
+    name: "Artificial Intelligence",
+    logo: "A"
+  },
+  {
+    id: "partner-2", 
+    name: "User Experience",
+    logo: "U"
+  },
+  {
+    id: "partner-3",
+    name: "React Development", 
+    logo: "R"
+  },
+  {
+    id: "partner-4",
+    name: "Enterprise Solutions",
+    logo: "E"
+  },
+  {
+    id: "partner-5",
+    name: "eXtended Reality",
+    logo: "X"
   }
 ];

@@ -2,7 +2,7 @@ import React from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar, Footer } from './components';
+import { Navbar, Footer, AnnouncementBanner } from './components';
 import styles from './style';
 import bgImg from './assets/bg.png';
 
@@ -36,6 +36,7 @@ const App = () => {
             <Navbar/>
           </div>
         </div>
+        <AnnouncementBanner />
         
         <Routes>
           <Route path="/" element={<Home />} />

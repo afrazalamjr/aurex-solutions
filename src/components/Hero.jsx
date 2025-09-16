@@ -11,15 +11,20 @@ const Hero = () => {
         <div className='flex flex-row justify-between items-center w-full'>
           <h1 className='flex-1 font-poppins font-semibold ss:text-[64px] text-[42px] text-white ss:leading-[80px] leading-[60px]'>
             Innovate With <br className='sm:block hidden' />
-            <span className="bg-gradient-to-r from-white to-[#158ec7] bg-clip-text text-transparent">Aurex</span>{" "}
+            <span className="text-gradient">Aurex</span>
           </h1>
-          {/* GetStarted button removed */}
         </div>
 
-        <p className={`${styles.paragraph} max-w-[470px] mt-3 text-[15px] leading-[24px] text-white`}>
+        <p className={`${styles.paragraph} max-w-[470px] mt-3 text-[18px] leading-[30px] text-white`}>
           Aurex Solutions delivers cutting-edge digital experiences. 
           We combine sleek design with robust development to bring your vision to life.
         </p>
+
+        <div className="mt-8">
+          <button className="bg-dolyBlue text-white font-semibold px-8 py-3 rounded-lg hover:bg-dolyBlue/90 transition-colors text-lg">
+            Get Started
+          </button>
+        </div>
       </div>
 
       {/* Right Side (Hero Image + Background) */}
@@ -31,9 +36,9 @@ const Hero = () => {
         />
 
         {/* Gradients */}
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 bg-gradient-to-r from-white to-[#158ec7] opacity-20 rounded-full" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bg-gradient-to-tr from-white to-transparent bottom-40 opacity-10" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 bg-gradient-to-r from-white to-[#158ec7] opacity-20 rounded-full" />
+        <div className="absolute z-[0] w-[40%] h-[35%] top-0 bg-gradient-to-r from-dolyBlue to-dolyBlue/60 opacity-20 rounded-full" />
+        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bg-gradient-to-tr from-dolyBlue to-transparent bottom-40 opacity-10" />
+        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 bg-gradient-to-r from-dolyBlue to-dolyBlue/60 opacity-20 rounded-full" />
       </div>
     </section>
   )

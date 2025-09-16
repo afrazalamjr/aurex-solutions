@@ -5,9 +5,13 @@ import {
   CardDeal, 
   Clients, 
   CTA, 
+  FeatureGrid,
   Hero, 
+  SectionHeading,
   Stats, 
-  Testimonials 
+  Testimonials,
+  TrustedPartners,
+  ValueProposition
 } from '../components';
 import styles from '../style';
 
@@ -21,12 +25,27 @@ const Home = () => {
       </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Stats/>
-          <Business/>
-          <Billing/>
-          <CardDeal/>
+          {/* <TrustedPartners/> */}
+          <ValueProposition/>
+          
+          <SectionHeading 
+            title="Our Services" 
+            subtitle="Comprehensive solutions to transform your business and drive growth"
+          />
+          <FeatureGrid/>
+          
+          <SectionHeading 
+            title="Client Testimonials" 
+            subtitle="What our satisfied clients say about working with us"
+          />
           <Testimonials/>
+          
+          <SectionHeading 
+            title="Our Clients" 
+            subtitle="Trusted by innovative companies worldwide"
+          />
           <Clients/>
+          
           <CTA/>
         </div>
       </div>
