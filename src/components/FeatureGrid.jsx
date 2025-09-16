@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import businessImg from '../assets/business.png';
+import businessImg from '../assets/bd.png';
 import aiImg from '../assets/ai.webp';
 import blockchainImg from '../assets/blockchain.png';
-import cryptoImg from '../assets/crypto.webp';
+import cryptoImg from '../assets/crypto.png';
 
 const FeatureGrid = () => {
   const features = [

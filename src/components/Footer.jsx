@@ -13,8 +13,8 @@ const Footer = () => {
             
             {/* Logo Section */}
             <div className="flex-1 max-w-md">
-              <img
-                src={logo}
+          <img
+            src={logo}
                 alt='Aurex Solutions'
                 className='w-[200px] h-auto object-contain mb-6'
               />
@@ -26,22 +26,22 @@ const Footer = () => {
               {/* Social Media Icons */}
               <div className="flex space-x-4">
                 {socialMedia.map((social) => (
-                  <a
-                    key={social.id}
-                    href={social.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
+            <a
+              key={social.id}
+              href={social.link}
+              target="_blank"
+              rel="noopener noreferrer"
                     className="w-10 h-10 bg-dolyBlue/10 rounded-full flex items-center justify-center hover:bg-dolyBlue/20 transition-colors"
-                  >
-                    <img
-                      src={social.icon}
-                      alt={social.id}
+            >
+              <img
+                src={social.icon}
+                alt={social.id}
                       className="w-5 h-5 object-contain"
-                    />
-                  </a>
-                ))}
-              </div>
-            </div>
+              />
+            </a>
+          ))}
+        </div>    
+      </div>
 
             {/* Content Sections */}
             <div className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-8">

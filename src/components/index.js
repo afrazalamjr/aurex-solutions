@@ -2,6 +2,7 @@ import AnnouncementBanner from './AnnouncementBanner'
 import Billing from './Billing'
 import Business from './Business'
 import CardDeal from './CardDeal'
+import ClientStrip from './ClientStrip'
 import Clients from './Clients'
 import CTA from './CTA'
 import FeatureGrid from './FeatureGrid'
@@ -20,6 +21,7 @@ export {
     Billing,
     Business,
     CardDeal,
+    ClientStrip,
     Clients,
     CTA,
     FeatureGrid,
